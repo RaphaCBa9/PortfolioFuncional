@@ -1,7 +1,7 @@
 # Carteira — Otimização de Portfólio Dow Jones em Haskell
 
 **Disciplina:** Programação Funcional — 2026-1  
-**Aluno:** Rafael Aback  
+**Aluno:** Raphael Banov
 **Professores:** Raul Ikeda e Fábio Ayres  
 **Entrega:** 10/05/2026
 
@@ -323,16 +323,15 @@ Sharpe Ratio:             -1.59
 
 O desempenho negativo no Q1 2025 é esperado e revela o **overfitting implícito** da abordagem de força bruta: ao selecionar o máximo global de Sharpe em um período histórico específico, o modelo encontra carteiras que se ajustam ao ruído daquele período. Isso é uma limitação conhecida da otimização de Markowitz e do método de Monte Carlo puro — não uma falha da implementação.
 
-### 10.3 Resumo de execuções realizadas
+### 10.3 Resumo
 
-| Combinações testadas | Tempo real (4 cores) | Melhor Sharpe | Melhor retorno | Volatilidade |
-|---|---|---|---|---|
-| 100 | 36s | 4.54 | 33.98% | 7.48% |
-| 200 | 1min 11s | 4.63 | 45.99% | 9.93% |
-| 1.000 | ~6min* | 4.64 | 45.11% | 9.72% |
-| 30.045.015 (full) | ~30 dias* | — | — | — |
+| Configuração | Combinações | Tempo (4 cores) | Melhor Sharpe |
+|---|---|---|---|
+| Teste rápido | 100 | 36s | 4.54 |
+| Teste médio | 200 | 1min 11s | 4.63 |
+| Estimativa full | 30.045.015 | ~35 dias* | — |
 
-*Estimativa baseada em 0.36s/combo × N / 4 cores com o binário otimizado.
+*Estimativa baseada em 0.36s/combo × 30M / 4 cores.
 
 ---
 
