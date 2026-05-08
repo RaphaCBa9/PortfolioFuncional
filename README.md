@@ -2,6 +2,7 @@
 
 **Disciplina:** Programação Funcional — 2026-1  
 **Aluno:** Raphael Banov
+
 **Professores:** Raul Ikeda e Fábio Ayres  
 **Entrega:** 10/05/2026
 
