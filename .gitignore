@@ -1,0 +1,25 @@
+# Stack build artifacts
+.stack-work/
+stack.yaml.lock
+
+# Cabal (gerado pelo hpack a partir do package.yaml)
+dist/
+dist-newstyle/
+*.cabal
+
+# Dados brutos (grandes demais para o repositório)
+data/raw/
+
+# Resultados de execução
+results/*.txt
+results/*.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Sistema
+.DS_Store
+*~
+*.swp
